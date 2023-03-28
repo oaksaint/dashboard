@@ -192,16 +192,16 @@ button:active {
 }
 
 .projects-text {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .main-grid-card {
-    background-color: #66ffcc;
-    border-left: 10px solid lightgray;
-    border-radius: 10px;
-    box-shadow: 5px 6px 6px grey;
-    padding: 1re` 2rem 2rem 2rem;
-    font-size: 1rem;
-    height: 10rem;
-    overflow: scroll;
+  background-color: #66ffcc;
+  border-left: 10px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 5px 6px 6px grey;
+  padding: 1rem 2rem 2rem 2rem;
+  font-size: 1rem;
+  height: 10rem;
+  overflow: scroll;
 }
