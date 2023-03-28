@@ -13,18 +13,12 @@ body {
   grid-row: 1 / 3;
   background-color: lightgray;
   display: grid;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr;
 }
 
 .sidebar div {
   margin-left: 0.5rem;
   margin-top: 0.5rem;
-  gap: 1rem;
-}
-
-.sidebar-primary-home,
-.sidebar-primary-profile {
-  display: flex;
   gap: 1rem;
 }
 
@@ -35,12 +29,17 @@ body {
   padding: 0.5rem;
   font-size: 2rem;
 }
+.sidebar-dashboard:hover {
+  background-color: grey;
+  cursor: pointer;
+}
 
 .sidebar-primary {
   margin-bottom: 1.5rem;
 }
 
-.sidebar-primary-home .sidebar-primary-profile,
+.sidebar-primary-home,
+.sidebar-primary-profile,
 .sidebar-primary-messages,
 .sidebar-primary-history,
 .sidebar-primary-tasks,
@@ -50,6 +49,21 @@ body {
 .sidebar-secondary-privacy {
   display: flex;
   gap: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.sidebar-primary-home:hover,
+.sidebar-primary-profile:hover,
+.sidebar-primary-messages:hover,
+.sidebar-primary-history:hover,
+.sidebar-primary-tasks:hover,
+.sidebar-primary-communities:hover,
+.sidebar-secondary-settings:hover,
+.sidebar-secondary-support:hover,
+.sidebar-secondary-privacy:hover {
+  background-color: grey;
 }
 
 .sidebar-dashboard-icon {
@@ -61,6 +75,9 @@ body {
   grid-row: 1 / 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #66ffcc;
+  padding: 1.5rem 4rem;
+  gap: 1rem;
 }
 
 .header-top {
@@ -68,6 +85,25 @@ body {
   align-items: center;
   justify-content: flex-end;
   gap: 2.5rem;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-search-icon {
+  width: 2rem;
+}
+
+.header-search-searchbar {
+  border-radius: 10px;
+  height: 1rem;
+  min-width: 10vw;
+  width: 40vw;
+  border: none;
+  padding: 0.5rem;
 }
 
 .header-bottom {
@@ -101,4 +137,37 @@ body {
   width: 4.5rem;
   justify-self: start;
   grid-row: 1 / 3;
+}
+
+.header-notifications-icon {
+    width: 2rem;
+  }
+
+.header-notifications-icon:hover {
+  cursor: pointer;
+  filter: invert(100%) sepia(0%) saturate(24%) hue-rotate(114deg) brightness(108%) contrast(108%);
+}
+
+.header-bottom-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+button {
+  background-color: lightgrey;
+  border-radius: 15px;
+  padding: 0.5rem;
+  width: 6rem;
+  border: 1px solid white;
+}
+
+button:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: white;
+  position: relative;
+  top: 2px;
 }
