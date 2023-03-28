@@ -140,8 +140,8 @@ body {
 }
 
 .header-notifications-icon {
-    width: 2rem;
-  }
+  width: 2rem;
+}
 
 .header-notifications-icon:hover {
   cursor: pointer;
@@ -159,15 +159,19 @@ button {
   padding: 0.5rem;
   width: 6rem;
   border: 1px solid white;
+  font-size: 1rem;
+  font-weight: 800;
 }
 
 button:hover {
   background-color: gray;
   cursor: pointer;
+  color: white;
 }
 
 button:active {
   background-color: white;
   position: relative;
   top: 2px;
+  color: black;
 }
